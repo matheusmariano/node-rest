@@ -7,14 +7,18 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2"
   },
   "devDependencies": {
     "dotenv": "^5.0.0",
-    "nodemon": "^1.14.12"
+    "jest": "^22.1.4",
+    "nodemon": "^1.14.12",
+    "supertest": "^3.0.0"
   },
   "scripts": {
     "dev": "npx nodemon app/index.js",
-    "start": "node app/index.js"
+    "start": "node app/index.js",
+    "test": "npx jest"
   }
 }

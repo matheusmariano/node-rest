@@ -1,10 +1,11 @@
 const express = require('express');
-const config = require('../config');
+const bodyParser = require('body-parser');
+const apiRouter = require('../routes/api');
 
 const app = express();
 
-const port = config.app.port;
+app.use(bodyParser.json());
 
-app.listen(port, () => {
-  console.log(`Listening at port ${port}.`);
-});
+app.use('/api', apiRouter);
+
+module.exports = app;
