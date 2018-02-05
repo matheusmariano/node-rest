@@ -12,4 +12,4 @@ Run `yarn dev` to start the development server or `yarn start` to start the prod
 
 ## Docker
 
-Run `docker-compose up -d` to start the development server.
+You have to generate a `docker-compose.yml` file from base files using the command `docker-compose -f dc-base.yml -f dc-{env}.yml config > docker-compose.yml` then run `docker-compose up -d` to start the server.

@@ -241,3 +241,4 @@ $RECYCLE.BIN/
 
 # Docker files
 docker/postges/data
+docker-compose.yml
